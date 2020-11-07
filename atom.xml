@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://blog.bimg.top/</id>
+    <id>https://blog.bimg.top</id>
     <title>Gridea</title>
-    <updated>2020-11-07T14:57:46.446Z</updated>
+    <updated>2020-11-07T14:59:21.177Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://blog.bimg.top/"/>
+    <link rel="alternate" href="https://blog.bimg.top"/>
     <link rel="self" href="https://blog.bimg.top/atom.xml"/>
     <subtitle>温故而知新</subtitle>
     <logo>https://blog.bimg.top/images/avatar.png</logo>
