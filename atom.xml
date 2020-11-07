@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.bimg.top</id>
-    <title>Gridea</title>
-    <updated>2020-11-07T15:31:39.846Z</updated>
+    <title>不吃洋葱和芹菜的奶爸</title>
+    <updated>2020-11-07T15:42:48.927Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.bimg.top"/>
     <link rel="self" href="https://blog.bimg.top/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>何以解忧？唯有暴富！</subtitle>
     <logo>https://blog.bimg.top/images/avatar.png</logo>
     <icon>https://blog.bimg.top/favicon.ico</icon>
-    <rights>All rights reserved 2020, Gridea</rights>
+    <rights>All rights reserved 2020, 不吃洋葱和芹菜的奶爸</rights>
+    <entry>
+        <title type="html"><![CDATA[自豪的采用Gridea写静态博客！]]></title>
+        <id>https://blog.bimg.top/post/zi-hao-de-cai-yong-gridea-xie-jing-tai-bo-ke/</id>
+        <link href="https://blog.bimg.top/post/zi-hao-de-cai-yong-gridea-xie-jing-tai-bo-ke/">
+        </link>
+        <updated>2020-11-07T15:40:28.000Z</updated>
+        <content type="html"><![CDATA[<p>非常自豪的采用Gridea写博客，托管于Coding！<br>
+感谢！<br>
+By：2020年11月7日 23:42:19</p>
+]]></content>
+    </entry>
 </feed>
