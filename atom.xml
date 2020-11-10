@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.bimg.top</id>
     <title>不吃洋葱和芹菜的奶爸</title>
-    <updated>2020-11-07T15:42:48.927Z</updated>
+    <updated>2020-11-10T15:01:48.048Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.bimg.top"/>
     <link rel="self" href="https://blog.bimg.top/atom.xml"/>
@@ -10,6 +10,40 @@
     <logo>https://blog.bimg.top/images/avatar.png</logo>
     <icon>https://blog.bimg.top/favicon.ico</icon>
     <rights>All rights reserved 2020, 不吃洋葱和芹菜的奶爸</rights>
+    <entry>
+        <title type="html"><![CDATA[高精度LED点阵时钟（开源）]]></title>
+        <id>https://blog.bimg.top/post/MatrixClock/</id>
+        <link href="https://blog.bimg.top/post/MatrixClock/">
+        </link>
+        <updated>2020-11-10T14:59:23.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="视频演示">视频演示</h2>
+<ul>
+<li>哔哩哔哩 <a href="https://www.bilibili.com/video/BV11a4y1s7Tq/">https://www.bilibili.com/video/BV11a4y1s7Tq/</a></li>
+</ul>
+<h2 id="源码来源">源码来源</h2>
+<ul>
+<li><a href="https://github.com/schreibfaul1/ESP8266-LED-Matrix-Clock">https://github.com/schreibfaul1/ESP8266-LED-Matrix-Clock</a></li>
+</ul>
+<h2 id="修改了什么">修改了什么</h2>
+<ul>
+<li>将原作者使用的共阴极LED模块改为了共阳极LED模块（手头现有的）</li>
+<li>将数字字体稍作修改，改的更丑了（手动滑稽）</li>
+<li>添加了中文星期显示，可自行修改星期七或者星期天（自制？）</li>
+<li>将显示模式改为了更符合中国人的阅读习惯（不知道你习不习惯，反正我是这样比较习惯）</li>
+<li>将固定时间滚动改为了随机时间滚动</li>
+</ul>
+<h2 id="鸣谢">鸣谢</h2>
+<ul>
+<li><a href="https://lceda.cn/">立创EDA</a> - 超级简单易用易学的国产EDA</li>
+<li><a href="https://www.jlc.com/">嘉立创</a> - 5元10x10cm打样，顺丰包邮。真香警告！</li>
+<li><a href="https://www.szlcsc.com/">立创商城</a> - 元件齐全，有活动可以白嫖！</li>
+</ul>
+<h2 id="硬件开源地址">硬件开源地址</h2>
+<ul>
+<li><a href="https://oshwhub.com/myseil/gao-jing-duled-dian-zhen-shi-zhong">OSHWHub硬件开源平台</a></li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[自豪的采用Gridea写静态博客！]]></title>
         <id>https://blog.bimg.top/post/zi-hao-de-cai-yong-gridea-xie-jing-tai-bo-ke/</id>
