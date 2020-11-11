@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://blog.bimg.top</id>
+    <id>https://myseil.github.io</id>
     <title>不吃洋葱和芹菜的奶爸</title>
-    <updated>2020-11-10T15:01:48.048Z</updated>
+    <updated>2020-11-11T04:39:18.639Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://blog.bimg.top"/>
-    <link rel="self" href="https://blog.bimg.top/atom.xml"/>
+    <link rel="alternate" href="https://myseil.github.io"/>
+    <link rel="self" href="https://myseil.github.io/atom.xml"/>
     <subtitle>何以解忧？唯有暴富！</subtitle>
-    <logo>https://blog.bimg.top/images/avatar.png</logo>
-    <icon>https://blog.bimg.top/favicon.ico</icon>
+    <logo>https://myseil.github.io/images/avatar.png</logo>
+    <icon>https://myseil.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 不吃洋葱和芹菜的奶爸</rights>
     <entry>
         <title type="html"><![CDATA[高精度LED点阵时钟（开源）]]></title>
-        <id>https://blog.bimg.top/post/MatrixClock/</id>
-        <link href="https://blog.bimg.top/post/MatrixClock/">
+        <id>https://myseil.github.io/post/MatrixClock/</id>
+        <link href="https://myseil.github.io/post/MatrixClock/">
         </link>
         <updated>2020-11-10T14:59:23.000Z</updated>
         <content type="html"><![CDATA[<h2 id="视频演示">视频演示</h2>
@@ -46,8 +46,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[自豪的采用Gridea写静态博客！]]></title>
-        <id>https://blog.bimg.top/post/zi-hao-de-cai-yong-gridea-xie-jing-tai-bo-ke/</id>
-        <link href="https://blog.bimg.top/post/zi-hao-de-cai-yong-gridea-xie-jing-tai-bo-ke/">
+        <id>https://myseil.github.io/post/zi-hao-de-cai-yong-gridea-xie-jing-tai-bo-ke/</id>
+        <link href="https://myseil.github.io/post/zi-hao-de-cai-yong-gridea-xie-jing-tai-bo-ke/">
         </link>
         <updated>2020-11-07T15:40:28.000Z</updated>
         <content type="html"><![CDATA[<p>非常自豪的采用Gridea写博客，托管于Coding！<br>
