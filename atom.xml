@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.bimg.top</id>
     <title>不吃洋葱和芹菜的奶爸</title>
-    <updated>2020-11-11T05:47:51.150Z</updated>
+    <updated>2020-11-11T12:00:17.646Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.bimg.top"/>
     <link rel="self" href="https://blog.bimg.top/atom.xml"/>
@@ -41,6 +41,10 @@
 <h2 id="硬件开源地址">硬件开源地址</h2>
 <ul>
 <li><a href="https://oshwhub.com/myseil/gao-jing-duled-dian-zhen-shi-zhong">OSHWHub硬件开源平台</a></li>
+</ul>
+<h2 id="开源代码">开源代码</h2>
+<ul>
+<li>🎁GitHub<a href="https://github.com/myseil/MatrixClock">https://github.com/myseil/MatrixClock</a>,如果觉得不错，请Star哟！</li>
 </ul>
 ]]></content>
     </entry>
