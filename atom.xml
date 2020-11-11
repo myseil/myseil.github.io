@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.bimg.top</id>
     <title>不吃洋葱和芹菜的奶爸</title>
-    <updated>2020-11-11T12:00:36.218Z</updated>
+    <updated>2020-11-11T12:28:12.855Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.bimg.top"/>
     <link rel="self" href="https://blog.bimg.top/atom.xml"/>
@@ -10,6 +10,29 @@
     <logo>https://blog.bimg.top/images/avatar.png</logo>
     <icon>https://blog.bimg.top/favicon.ico</icon>
     <rights>All rights reserved 2020, 不吃洋葱和芹菜的奶爸</rights>
+    <entry>
+        <title type="html"><![CDATA[Bing必应每日高清壁纸]]></title>
+        <id>https://blog.bimg.top/post/Bimg-top/</id>
+        <link href="https://blog.bimg.top/post/Bimg-top/">
+        </link>
+        <updated>2020-11-11T12:05:20.000Z</updated>
+        <content type="html"><![CDATA[<p><code>首先今天是2020年11月11日 ，双十一哦！祝大家光棍节快乐，剁手不哭！</code></p>
+<h3 id="bing壁纸">Bing壁纸</h3>
+<p><a href="http://bimg.top/" title="Bing每日壁纸">Bimg.top</a>是一个收集每天Bing中国精美壁纸的网站，刚开始只是一个小众的、不为人知的。后来慢慢随着时间的推移，收集的壁纸也越来越多。发展了一批喜欢收集必应中国壁纸的朋友。<br>
+<code>Bimg.Top</code>一直会提供免费下载，提供更加简单的下载方式，不要注册（我就下载一张图片，还得填写邮箱、用户名、密码你们不烦吗？）。直接下载超高清的格式，不要其他的，图片我就要清晰好看。</p>
+<h3 id="为什么要做这个">为什么要做这个？</h3>
+<p>Bing每天的壁纸这么棒，为什么不收集起来慢慢欣赏呢？<br>
+刚开始只是自己慢慢收集，然后发现每天都有人在访问我这个网站，也有通过Email询问如何下载的。<br>
+如果能帮到大家岂不是很美？</p>
+<h3 id="为什么要用天翼云">为什么要用天翼云</h3>
+<p>刚开始是直接在网站上面点击下载就可以了，突然有一个月流量欠费了，然后分析网络日志发现仅仅一个星期的时间，网站的下载流量超过百G，这样七牛云的免费额度就没有了。这里表扬七牛云有完善的日志可以查询。<br>
+有某些人，因为我这里下载比较方便就通过手段大批量的下载，导致流量超标。<br>
+然后只能寻找存储的地方给大家继续提供免费下载，百度云不考虑，速度稀烂。其它的云要不广告多，要不就是限速。然后发现天翼云可以全速下载，又没有广告，而且分享的链接还不容易挂。就选择了天翼云。<br>
+如果以后有更好的，也许会另外在做选择。</p>
+<h3 id="说明">说明</h3>
+<p>天翼云会不定时打包成压缩包提供下载，目前的解压密码是：<code>Bimg.top</code></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[高精度LED点阵时钟（开源）]]></title>
         <id>https://blog.bimg.top/post/MatrixClock/</id>
