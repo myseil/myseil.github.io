@@ -32,6 +32,9 @@
 <link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
 
 
+    <!-- 百度统计 -->
+    <script type="text/javascript" src="https://s5.cnzz.com/z_stat.php?id=1277694110&web_id=1277694110"></script>
+
 
 </head>
 <body>
@@ -314,6 +317,14 @@
         });
     });
 
+    
+        var allImg = $("img");
+        allImg.on("contextmenu", function () {
+            return false;
+        });
+        allImg.on("dragstart", function () {
+            return false;
+        });
     
 </script>
 
