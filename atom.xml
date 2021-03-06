@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://myseil.github.io</id>
+    <id>https://zywen.win</id>
     <title>MySeil</title>
-    <updated>2021-03-06T02:37:01.702Z</updated>
+    <updated>2021-03-06T02:40:57.236Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://myseil.github.io"/>
-    <link rel="self" href="https://myseil.github.io/atom.xml"/>
+    <link rel="alternate" href="https://zywen.win"/>
+    <link rel="self" href="https://zywen.win/atom.xml"/>
     <subtitle>何以解忧？唯有暴富！</subtitle>
-    <logo>https://myseil.github.io/images/avatar.png</logo>
-    <icon>https://myseil.github.io/favicon.ico</icon>
+    <logo>https://zywen.win/images/avatar.png</logo>
+    <icon>https://zywen.win/favicon.ico</icon>
     <rights>All rights reserved 2021, MySeil</rights>
     <entry>
         <title type="html"><![CDATA[Bing必应每日高清壁纸]]></title>
-        <id>https://myseil.github.io/post/Bimg-top/</id>
-        <link href="https://myseil.github.io/post/Bimg-top/">
+        <id>https://zywen.win/post/Bimg-top/</id>
+        <link href="https://zywen.win/post/Bimg-top/">
         </link>
         <updated>2020-11-11T12:05:20.000Z</updated>
         <content type="html"><![CDATA[<p><code>首先今天是2020年11月11日 ，双十一哦！祝大家光棍节快乐，剁手不哭！</code></p>
@@ -49,8 +49,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[高精度LED点阵时钟（开源）]]></title>
-        <id>https://myseil.github.io/post/MatrixClock/</id>
-        <link href="https://myseil.github.io/post/MatrixClock/">
+        <id>https://zywen.win/post/MatrixClock/</id>
+        <link href="https://zywen.win/post/MatrixClock/">
         </link>
         <updated>2020-11-10T14:59:23.000Z</updated>
         <content type="html"><![CDATA[<h2 id="视频演示">视频演示</h2>
@@ -87,8 +87,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[自豪的采用Gridea写静态博客！]]></title>
-        <id>https://myseil.github.io/post/zi-hao-de-cai-yong-gridea-xie-jing-tai-bo-ke/</id>
-        <link href="https://myseil.github.io/post/zi-hao-de-cai-yong-gridea-xie-jing-tai-bo-ke/">
+        <id>https://zywen.win/post/zi-hao-de-cai-yong-gridea-xie-jing-tai-bo-ke/</id>
+        <link href="https://zywen.win/post/zi-hao-de-cai-yong-gridea-xie-jing-tai-bo-ke/">
         </link>
         <updated>2020-11-07T15:40:28.000Z</updated>
         <content type="html"><![CDATA[<p>非常自豪的采用Gridea写博客，托管于Coding！<br>
