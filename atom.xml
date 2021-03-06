@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://myseil.github.io</id>
-    <title>不吃洋葱和芹菜的奶爸</title>
-    <updated>2021-03-06T02:17:36.189Z</updated>
+    <title>MySeil</title>
+    <updated>2021-03-06T02:37:01.702Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://myseil.github.io"/>
     <link rel="self" href="https://myseil.github.io/atom.xml"/>
     <subtitle>何以解忧？唯有暴富！</subtitle>
     <logo>https://myseil.github.io/images/avatar.png</logo>
     <icon>https://myseil.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, 不吃洋葱和芹菜的奶爸</rights>
+    <rights>All rights reserved 2021, MySeil</rights>
     <entry>
         <title type="html"><![CDATA[Bing必应每日高清壁纸]]></title>
         <id>https://myseil.github.io/post/Bimg-top/</id>
