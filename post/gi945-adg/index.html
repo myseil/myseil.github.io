@@ -1,193 +1,100 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="utf-8" >
 
-<title>MySeil</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>利用闲置Gi945搭建AdGuard Home | MySeil</title>
 
-<meta name="description" content="何以解忧？唯有暴富！"/>
-<meta name="keywords" content="何以解忧？唯有暴富！"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-<link rel="shortcut icon" href="https://zywen.win/favicon.ico">
-
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://zywen.win/favicon.ico?v=1615125878917">
 <link rel="stylesheet" href="https://zywen.win/styles/main.css">
 
-<!-- Modernizr JS -->
-<script src="https://zywen.win/media/scripts/modernizr-2.6.2.min.js"></script>
-<!-- FOR IE9 below -->
-<!--[if lt IE 9]>
-<scripts src="https://zywen.win/media/scripts/respond.min.js"></scripts>
-<![endif]-->
 
-<!-- Comment -->
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
 
-<!-- katex -->
-<!--<link href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css" rel="stylesheet">-->
+    <meta name="description" content="前言：所有内容均为个人经验，欢迎交流探讨。不涉及任何推广。
+为什么这么玩？
 
-<link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+以前跟风捡垃圾入手了一个华为Gi945，后来因为N270CPU实在太拉跨就一直闲置到现在。最近在使用OpenWrt路由系统的时候接触到了一个去广告的项目支就是Ad..." />
+    <meta name="keywords" content="AdGuardHome,去广告,Gi945" />
+  </head>
+  <body>
+    <div id="app" class="main">
 
-
-
-</head>
-<body>
-    <div id="fh5co-offcanvas">
-    <a href="#!" class="fh5co-close-offcanvas js-fh5co-close-offcanvas">
-        <span><i class="icon-cross3"></i> <span>Close</span></span>
-    </a>
-    <div class="fh5co-bio">
-        <figure>
-            <img src="https://zywen.win/images/avatar.png" alt="MySeil"
-                 class="img-responsive">
-        </figure>
-        <a href="https://zywen.win/post/about/"><h3 class="heading">ABOUT ME</h3></a>
-        <h2>MySeil</h2>
-        <p>何以解忧？唯有暴富！</p>
-        <ul class="fh5co-social">
-            
-                <li>
-                    
-                </li>
-            
-                <li>
-                    
-                </li>
-            
-                <li>
-                    
-                </li>
-            
-                <li>
-                    
-                </li>
-            
-                <li>
-                    
-                </li>
-            
-        </ul>
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://zywen.win">
+        <img src="https://zywen.win/images/avatar.png?v=1615125878917" class="site-logo">
+        <h1 class="site-title">MySeil</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
     </div>
-
-    <div class="fh5co-menu">
-
-        <!-- 标签 -->
-        <div class="fh5co-box">
-            <a href="https://zywen.win/tags/"><h3 class="heading">👉标签</h3></a>
-            <ul>
-                
-                    <li><a href="https://zywen.win/tag/eZBkSgrxm/">hg8120c</a></li>
-                
-                    <li><a href="https://zywen.win/tag/fiZNWv1_1/">Linux</a></li>
-                
-                    <li><a href="https://zywen.win/tag/aJwsffQzpP/">curl</a></li>
-                
-                    <li><a href="https://zywen.win/tag/BvlK3r4iu/">Bing壁纸</a></li>
-                
-                    <li><a href="https://zywen.win/tag/9xtZ9j732/">AdGuardHome</a></li>
-                
-                    <li><a href="https://zywen.win/tag/xm_Qq1G6Y2/">去广告</a></li>
-                
-                    <li><a href="https://zywen.win/tag/EG5RonstgI/">Gi945</a></li>
-                
-                    <li><a href="https://zywen.win/tag/znnwSZSLa/">摄像头RTSP</a></li>
-                
-                    <li><a href="https://zywen.win/tag/3vGkHakLGz/">必应壁纸</a></li>
-                
-                    <li><a href="https://zywen.win/tag/JV0dbl2yg/">ESP8266</a></li>
-                
-                    <li><a href="https://zywen.win/tag/AlAP6TenCw/">LED点阵</a></li>
-                
-                    <li><a href="https://zywen.win/tag/vtVKTwQ-BR/">时钟</a></li>
-                
-                    <li><a href="https://zywen.win/tag/W3udQ2abo/">Gridea</a></li>
-                
-            </ul>
-        </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
     </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      何以解忧？唯有暴富！
+    </div>
+    <div class="site-footer">
+      网站自豪的采用<a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://zywen.win/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
 </div>
 
-<header id="fh5co-header">
-    <div class="container-fluid">
-        <div class="row">
-            <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-            <ul class="fh5co-social">
-                
-                    <li>
-                        <a href="/"
-                        
-                        >
-                            首页
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a href="/archives"
-                        
-                        >
-                            归档
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a href="/tags"
-                        
-                        >
-                            标签
-                        </a>
-                    </li>
-                
-            </ul>
-            <div class="col-lg-12 col-md-12 text-center">
-                <h1 id="fh5co-logo">
-                    <a href="https://zywen.win">MySeil </a>
-                </h1>
-            </div>
-        </div>
-    </div>
-</header>
 
-
-    <!--  <a href="#" class="fh5co-post-prev"><span>👈 Prev</span></a>-->
-    <!--  <a href="#" class="fh5co-post-next"><span>Next 👉</span></a>-->
-
-    <!-- 等gridea出自定义页面功能再优化一下 -->
-    
-        <div class="container-fluid">
-    <div class="row fh5co-post-entry single-entry">
-        <article class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
-            <figure class="animate-box">
-                
-                    <img src="https://img-cdn.bimg.top/picgo/603a33663c9474729.jpg_fo742.jpg" alt="利用闲置Gi945搭建AdGuard Home" class="img-responsive">
-                
-            </figure>
-            <span class="fh5co-meta animate-box">
-                
-                    <div class="tag-container">
-                        
-                            <a href="https://zywen.win/tag/9xtZ9j732/" class="tag">AdGuardHome, </a>
-                        
-                            <a href="https://zywen.win/tag/xm_Qq1G6Y2/" class="tag">去广告, </a>
-                        
-                            <a href="https://zywen.win/tag/EG5RonstgI/" class="tag">Gi945, </a>
-                        
-                    </div>
-                
-            </span>
-            <h2 class="fh5co-article-title animate-box">利用闲置Gi945搭建AdGuard Home</h2>
-            <ol class="breadcrumb fh5co-meta fh5co-date animate-box" style="margin-bottom:0; background-color:#f8f9fa">
-                <li>2021-03-06</li>
-                <li>1324字</li>
-                <li>5 min read</li>
-            </ol>
-
-            <div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-left content-article">
-                <div class="row">
-                    <div class="col-md-12 animate-box post-content">
-                        <p> <p>前言：所有内容均为个人经验，欢迎交流探讨。不涉及任何推广。</p>
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">利用闲置Gi945搭建AdGuard Home</h2>
+            <div class="post-date">2021-03-06</div>
+            
+              <div class="feature-container" style="background-image: url('https://img-cdn.bimg.top/picgo/603a33663c9474729.jpg_fo742.jpg')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <p>前言：所有内容均为个人经验，欢迎交流探讨。不涉及任何推广。</p>
 <h4 id="为什么这么玩">为什么这么玩？</h4>
 <figure data-type="image" tabindex="1"><img src="https://img-cdn.bimg.top/picgo/603a33663c9474729.jpg_fo742.jpg" alt="img" loading="lazy"></figure>
 <p>以前跟风捡垃圾入手了一个华为Gi945，后来因为N270CPU实在太拉跨就一直闲置到现在。最近在使用OpenWrt路由系统的时候接触到了一个去广告的项目支就是AdGuard Home，可以运行在软路由、硬路由等设备上面的去广告服务，基于DNS。相信各位折腾各种软路由和OpenWrt的玩家们并不陌生。当然，本人的路由设备是在太差，跑AdGuard Home估计会运行困难。所以想到将AdGuard Home放到Gi945下面去跑，让Gi945作为一个DNS服务器运行。</p>
@@ -298,144 +205,62 @@ CentOS下的下载命令是：<code>wget https://github.com/AdguardTeam/AdGuardH
 <p>刚刚修改完设备的DNS后在仪表盘就看到统计结果，发现拦截的百度（百毒）的是比较多。</p>
 <h3 id="总结">总结</h3>
 <p>总体来说效果还是挺满意的，把我闲置的Gi945设备利用起来，做一个广告过滤器让整个家里的局域网干干净净。这里值得说明的是，有时候会将我的小米电视的正常内容也过滤掉，这是因为小米电视的部分内容和广告好像是一起加载的，这样的我直接点击放行就搞定了。</p>
- </p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-12 animate-box">
-                        
-                            <div class="next-post">
-                                <div class="next">下一篇</div>
-                                <a href="https://zywen.win/post/webcam-rtsp/">
-                                    <h3 class="post-title">
-                                        部分摄像头串流连接方式
-                                    </h3>
-                                </a>
-                            </div>
-                        
-                    </div>
-                </div>
-
-                <div class="row">
-    <div class="col-md-12 animate-box">
-        
-    </div>
-</div>
 
             </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://zywen.win/tag/9xtZ9j732/" class="tag">
+                    AdGuardHome
+                  </a>
+                
+                  <a href="https://zywen.win/tag/xm_Qq1G6Y2/" class="tag">
+                    去广告
+                  </a>
+                
+                  <a href="https://zywen.win/tag/EG5RonstgI/" class="tag">
+                    Gi945
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://zywen.win/post/webcam-rtsp/">
+                  <h3 class="post-title">
+                    部分摄像头串流连接方式
+                  </h3>
+                </a>
+              </div>
+            
 
-        </article>
+            
+
+          </div>
+
+        </div>
+      </div>
     </div>
-</div>
 
-    
-
-    <!-- 返回顶部 -->
-    <div class="back-to-top">
-    
-        <a href="#!" id="tool-toc" class="hidden-xs hidden-sm">
-            <i class="fa fa-map"></i>
-        </a>
-        <br>
-    
-    <a href="#top" class="hidden-xs hidden-sm"><i class="fa fa-paper-plane"></i></a>
-</div>
-
-<div class="post-toc animated fadeInRight hidden-xs hidden-sm" style="display: none;">
-    <ul class="markdownIt-TOC">
-<li>
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%BF%99%E4%B9%88%E7%8E%A9">为什么这么玩？</a></li>
-</ul>
-</li>
-<li><a href="#%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85">如何安装？</a></li>
-<li><a href="#1gi945%E5%AE%89%E8%A3%85linux%E7%B3%BB%E7%BB%9F%E6%88%91%E8%BF%99%E9%87%8C%E5%AE%89%E8%A3%85%E7%9A%84%E6%98%AFcentos-7-altarch-%E7%89%88%E6%9C%AC%E5%9B%A0%E4%B8%BA%E5%90%84%E5%A4%A7linux%E7%B3%BB%E7%BB%9F%E5%B7%B2%E7%BB%8F%E5%81%9C%E6%AD%A2%E4%BA%86%E5%AF%B932%E4%BD%8Dcpu%E7%9A%84%E6%94%AF%E6%8C%81">1.Gi945安装linux系统，我这里安装的是CentOS 7 AltArch 版本，因为各大Linux系统已经停止了对32位CPU的支持。</a></li>
-<li><a href="#%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8">如何使用？</a>
-<ul>
-<li><a href="#%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE">基本配置</a>
-<ul>
-<li><a href="#%E9%87%8D%E7%82%B9">重点！！！！！！</a></li>
-</ul>
-</li>
-<li><a href="#%E5%B9%BF%E5%91%8A%E8%BF%87%E6%BB%A4%E9%85%8D%E7%BD%AE">广告过滤配置</a></li>
-</ul>
-</li>
-<li><a href="#%E8%AE%BE%E5%A4%87%E9%85%8D%E7%BD%AE">设备配置</a></li>
-<li><a href="#%E6%9F%A5%E7%9C%8B%E6%97%A5%E5%BF%97">查看日志</a></li>
-<li><a href="#%E6%95%88%E6%9E%9C">效果</a></li>
-<li><a href="#%E6%80%BB%E7%BB%93">总结</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-</div>
-
-
-    
-<footer id="fh5co-footer">
-  <p>网站自豪的采用<a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a></p>
-</footer>
-
-
-    <!-- jQuery -->
-<script src="https://zywen.win/media/scripts/jquery.min.js"></script>
-<!-- img lazy load -->
-<script src="https://zywen.win/media/scripts/jquery.lazyload.min.js"></script>
-<!-- jQuery Easing -->
-<script src="https://zywen.win/media/scripts/jquery.easing.1.3.js"></script>
-<!-- Bootstrap -->
-<script src="https://zywen.win/media/scripts/bootstrap.min.js"></script>
-<!-- Waypoints -->
-<script src="https://zywen.win/media/scripts/jquery.waypoints.min.js"></script>
-<!-- Main JS -->
-<script src="https://zywen.win/media/scripts/main.js"></script>
-<!-- Md5 Min JS -->
-<script src="https://zywen.win/media/scripts/md5.min.js"></script>
-<!-- katex -->
-<!--<script src="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.js"></script>-->
-<!-- highlight -->
-<script src="https://cdn.bootcss.com/highlight.js/9.15.8/highlight.min.js"></script>
-
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script type="application/javascript">
-    // 代码高亮
-    hljs.initHighlightingOnLoad();
 
-    // img 懒加载
-    $(function () {
-        $("img.lazy").lazyload({
-            effect: "fadeIn",  // 懒加载动画
-            threshold: 180  // 在图片距离屏幕180px时提前载入
-        });
-        // tooltip
-        $('[data-toggle="tooltip"]').tooltip();
+AOS.init();
 
-        // 目录
-        $('#tool-toc').click(function () {
-            $('.post-toc').toggle();
-        });
-    });
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
-    
-        var allImg = $("img");
-        allImg.on("contextmenu", function () {
-            return false;
-        });
-        allImg.on("dragstart", function () {
-            return false;
-        });
-    
 </script>
 
 
 
 
-</body>
+
+
+  </body>
 </html>

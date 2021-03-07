@@ -1,189 +1,101 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="utf-8" >
 
-<title>MySeil</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>部分摄像头串流连接方式 | MySeil</title>
 
-<meta name="description" content="何以解忧？唯有暴富！"/>
-<meta name="keywords" content="何以解忧？唯有暴富！"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-<link rel="shortcut icon" href="https://zywen.win/favicon.ico">
-
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://zywen.win/favicon.ico?v=1615125878917">
 <link rel="stylesheet" href="https://zywen.win/styles/main.css">
 
-<!-- Modernizr JS -->
-<script src="https://zywen.win/media/scripts/modernizr-2.6.2.min.js"></script>
-<!-- FOR IE9 below -->
-<!--[if lt IE 9]>
-<scripts src="https://zywen.win/media/scripts/respond.min.js"></scripts>
-<![endif]-->
 
-<!-- Comment -->
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
 
-<!-- katex -->
-<!--<link href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css" rel="stylesheet">-->
+    <meta name="description" content="收集的部分摄像头串流的连接方式！
 
-<link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+SDK连接
+1、海康球机:user/password：admin/12345; Port:8000; IP：192.0.0.65（初始化）；（类型:IPCTypel=1）
+2、尼德摄像机:user/pas..." />
+    <meta name="keywords" content="摄像头RTSP" />
+  </head>
+  <body>
+    <div id="app" class="main">
 
-
-
-</head>
-<body>
-    <div id="fh5co-offcanvas">
-    <a href="#!" class="fh5co-close-offcanvas js-fh5co-close-offcanvas">
-        <span><i class="icon-cross3"></i> <span>Close</span></span>
-    </a>
-    <div class="fh5co-bio">
-        <figure>
-            <img src="https://zywen.win/images/avatar.png" alt="MySeil"
-                 class="img-responsive">
-        </figure>
-        <a href="https://zywen.win/post/about/"><h3 class="heading">ABOUT ME</h3></a>
-        <h2>MySeil</h2>
-        <p>何以解忧？唯有暴富！</p>
-        <ul class="fh5co-social">
-            
-                <li>
-                    
-                </li>
-            
-                <li>
-                    
-                </li>
-            
-                <li>
-                    
-                </li>
-            
-                <li>
-                    
-                </li>
-            
-                <li>
-                    
-                </li>
-            
-        </ul>
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://zywen.win">
+        <img src="https://zywen.win/images/avatar.png?v=1615125878917" class="site-logo">
+        <h1 class="site-title">MySeil</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
     </div>
-
-    <div class="fh5co-menu">
-
-        <!-- 标签 -->
-        <div class="fh5co-box">
-            <a href="https://zywen.win/tags/"><h3 class="heading">👉标签</h3></a>
-            <ul>
-                
-                    <li><a href="https://zywen.win/tag/eZBkSgrxm/">hg8120c</a></li>
-                
-                    <li><a href="https://zywen.win/tag/fiZNWv1_1/">Linux</a></li>
-                
-                    <li><a href="https://zywen.win/tag/aJwsffQzpP/">curl</a></li>
-                
-                    <li><a href="https://zywen.win/tag/BvlK3r4iu/">Bing壁纸</a></li>
-                
-                    <li><a href="https://zywen.win/tag/9xtZ9j732/">AdGuardHome</a></li>
-                
-                    <li><a href="https://zywen.win/tag/xm_Qq1G6Y2/">去广告</a></li>
-                
-                    <li><a href="https://zywen.win/tag/EG5RonstgI/">Gi945</a></li>
-                
-                    <li><a href="https://zywen.win/tag/znnwSZSLa/">摄像头RTSP</a></li>
-                
-                    <li><a href="https://zywen.win/tag/3vGkHakLGz/">必应壁纸</a></li>
-                
-                    <li><a href="https://zywen.win/tag/JV0dbl2yg/">ESP8266</a></li>
-                
-                    <li><a href="https://zywen.win/tag/AlAP6TenCw/">LED点阵</a></li>
-                
-                    <li><a href="https://zywen.win/tag/vtVKTwQ-BR/">时钟</a></li>
-                
-                    <li><a href="https://zywen.win/tag/W3udQ2abo/">Gridea</a></li>
-                
-            </ul>
-        </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
     </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      何以解忧？唯有暴富！
+    </div>
+    <div class="site-footer">
+      网站自豪的采用<a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://zywen.win/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
 </div>
 
-<header id="fh5co-header">
-    <div class="container-fluid">
-        <div class="row">
-            <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-            <ul class="fh5co-social">
-                
-                    <li>
-                        <a href="/"
-                        
-                        >
-                            首页
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a href="/archives"
-                        
-                        >
-                            归档
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a href="/tags"
-                        
-                        >
-                            标签
-                        </a>
-                    </li>
-                
-            </ul>
-            <div class="col-lg-12 col-md-12 text-center">
-                <h1 id="fh5co-logo">
-                    <a href="https://zywen.win">MySeil </a>
-                </h1>
-            </div>
-        </div>
-    </div>
-</header>
 
-
-    <!--  <a href="#" class="fh5co-post-prev"><span>👈 Prev</span></a>-->
-    <!--  <a href="#" class="fh5co-post-next"><span>Next 👉</span></a>-->
-
-    <!-- 等gridea出自定义页面功能再优化一下 -->
-    
-        <div class="container-fluid">
-    <div class="row fh5co-post-entry single-entry">
-        <article class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
-            <figure class="animate-box">
-                
-                    <img src="https://cdn.jsdelivr.net/gh/myseil/PicGoCDN//img/20210307220001.png" alt="部分摄像头串流连接方式" class="img-responsive">
-                
-            </figure>
-            <span class="fh5co-meta animate-box">
-                
-                    <div class="tag-container">
-                        
-                            <a href="https://zywen.win/tag/znnwSZSLa/" class="tag">摄像头RTSP, </a>
-                        
-                    </div>
-                
-            </span>
-            <h2 class="fh5co-article-title animate-box">部分摄像头串流连接方式</h2>
-            <ol class="breadcrumb fh5co-meta fh5co-date animate-box" style="margin-bottom:0; background-color:#f8f9fa">
-                <li>2021-01-04</li>
-                <li>393字</li>
-                <li>3 min read</li>
-            </ol>
-
-            <div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-left content-article">
-                <div class="row">
-                    <div class="col-md-12 animate-box post-content">
-                        <p> <p>收集的部分摄像头串流的连接方式！</p>
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">部分摄像头串流连接方式</h2>
+            <div class="post-date">2021-01-04</div>
+            
+              <div class="feature-container" style="background-image: url('https://cdn.jsdelivr.net/gh/myseil/PicGoCDN//img/20210307220001.png')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <p>收集的部分摄像头串流的连接方式！</p>
 <!--more-->
 <h3 id="sdk连接">SDK连接</h3>
 <p>1、海康球机:user/password：admin/12345; Port:8000; IP：192.0.0.65（初始化）；（类型:IPCTypel=1）<br>
@@ -207,125 +119,54 @@
 11、大华摄像机主码流：rtsp://username:password@ip:port/cam/realmonitor?channel=1&amp;subtype=0<br>
 辅码流：rtsp://username:password@ip:port/cam/realmonitor?channel=1&amp;subtype=1<br>
 12、深佳科技：rtsp://admin:admin@192.168.2.150:554/h264/ch1/main/av_stream</p>
- </p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-12 animate-box">
-                        
-                            <div class="next-post">
-                                <div class="next">下一篇</div>
-                                <a href="https://zywen.win/post/Bimg-top/">
-                                    <h3 class="post-title">
-                                        Bing必应每日高清壁纸
-                                    </h3>
-                                </a>
-                            </div>
-                        
-                    </div>
-                </div>
-
-                <div class="row">
-    <div class="col-md-12 animate-box">
-        
-    </div>
-</div>
 
             </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://zywen.win/tag/znnwSZSLa/" class="tag">
+                    摄像头RTSP
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://zywen.win/post/Bimg-top/">
+                  <h3 class="post-title">
+                    Bing必应每日高清壁纸
+                  </h3>
+                </a>
+              </div>
+            
 
-        </article>
+            
+
+          </div>
+
+        </div>
+      </div>
     </div>
-</div>
 
-    
-
-    <!-- 返回顶部 -->
-    <div class="back-to-top">
-    
-        <a href="#!" id="tool-toc" class="hidden-xs hidden-sm">
-            <i class="fa fa-map"></i>
-        </a>
-        <br>
-    
-    <a href="#top" class="hidden-xs hidden-sm"><i class="fa fa-paper-plane"></i></a>
-</div>
-
-<div class="post-toc animated fadeInRight hidden-xs hidden-sm" style="display: none;">
-    <ul class="markdownIt-TOC">
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#sdk%E8%BF%9E%E6%8E%A5">SDK连接</a></li>
-<li><a href="#rtsp%E8%BF%9E%E6%8E%A5">RTSP连接</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-</div>
-
-
-    
-<footer id="fh5co-footer">
-  <p>网站自豪的采用<a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a></p>
-</footer>
-
-
-    <!-- jQuery -->
-<script src="https://zywen.win/media/scripts/jquery.min.js"></script>
-<!-- img lazy load -->
-<script src="https://zywen.win/media/scripts/jquery.lazyload.min.js"></script>
-<!-- jQuery Easing -->
-<script src="https://zywen.win/media/scripts/jquery.easing.1.3.js"></script>
-<!-- Bootstrap -->
-<script src="https://zywen.win/media/scripts/bootstrap.min.js"></script>
-<!-- Waypoints -->
-<script src="https://zywen.win/media/scripts/jquery.waypoints.min.js"></script>
-<!-- Main JS -->
-<script src="https://zywen.win/media/scripts/main.js"></script>
-<!-- Md5 Min JS -->
-<script src="https://zywen.win/media/scripts/md5.min.js"></script>
-<!-- katex -->
-<!--<script src="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.js"></script>-->
-<!-- highlight -->
-<script src="https://cdn.bootcss.com/highlight.js/9.15.8/highlight.min.js"></script>
-
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script type="application/javascript">
-    // 代码高亮
-    hljs.initHighlightingOnLoad();
 
-    // img 懒加载
-    $(function () {
-        $("img.lazy").lazyload({
-            effect: "fadeIn",  // 懒加载动画
-            threshold: 180  // 在图片距离屏幕180px时提前载入
-        });
-        // tooltip
-        $('[data-toggle="tooltip"]').tooltip();
+AOS.init();
 
-        // 目录
-        $('#tool-toc').click(function () {
-            $('.post-toc').toggle();
-        });
-    });
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
-    
-        var allImg = $("img");
-        allImg.on("contextmenu", function () {
-            return false;
-        });
-        allImg.on("dragstart", function () {
-            return false;
-        });
-    
 </script>
 
 
 
 
-</body>
+
+
+  </body>
 </html>
