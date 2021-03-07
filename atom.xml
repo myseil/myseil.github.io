@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zywen.win</id>
     <title>MySeil</title>
-    <updated>2021-03-07T13:20:12.172Z</updated>
+    <updated>2021-03-07T13:58:51.630Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zywen.win"/>
     <link rel="self" href="https://zywen.win/atom.xml"/>
@@ -10,6 +10,42 @@
     <logo>https://zywen.win/images/avatar.png</logo>
     <icon>https://zywen.win/favicon.ico</icon>
     <rights>All rights reserved 2021, MySeil</rights>
+    <entry>
+        <title type="html"><![CDATA[HG8120C光猫获取管理员密码并恢复华为界面]]></title>
+        <id>https://zywen.win/post/hg8120c/</id>
+        <link href="https://zywen.win/post/hg8120c/">
+        </link>
+        <updated>2021-03-07T13:55:46.000Z</updated>
+        <summary type="html"><![CDATA[<h3 id="警告">警告！！！</h3>
+<p>该方法来源于网络，经过作者收集整理并验证通过，确实可行。<br>
+但是该方法并不表示你的同型号光猫可以实现。</p>
+]]></summary>
+        <content type="html"><![CDATA[<h3 id="警告">警告！！！</h3>
+<p>该方法来源于网络，经过作者收集整理并验证通过，确实可行。<br>
+但是该方法并不表示你的同型号光猫可以实现。</p>
+<!--more-->
+<h3 id="准备工作">准备工作</h3>
+<p>1、下载华为<code>ONT使能工具</code>、<code>华为光猫配置文件加解密工具</code>、<code>TFTP工具</code>。<br>
+2、电脑开启<code>TELNET</code>。（默认关闭，打开方法百度即可）<br>
+3、将电脑网口直连到光猫LAN口（必须），能直接获取光猫LAN口DHCP分配的IP。<br>
+4、打开<code>ONT使能工具</code>，选择<code>维修使能</code>，刷新<code>网卡</code>，让IP地址显示光猫的LAN口DHCP分配地址，其他选择默认即可，然后点击<code>启动</code>。<br>
+5、关闭光猫电源，拔掉光纤接头，然后上电，等待光猫光信号灯不亮（不一定），LAN1、LAN2、网络E/G三个灯长亮，然后点击停止<code>ONT使能工具</code>。<br>
+6、打开<code>TFTP</code>工具，【目录】选择桌面或者其他易记的位置，然后看IP是否是和光猫在同一网段。功能选择【TFTP服务器】。</p>
+<h3 id="备份hw_ctreexml">备份hw_ctree.xml</h3>
+<p>现在可以TELNET到光猫操作了，步骤如下：<br>
+1、通过系统<code>CMD</code>命令（或者其他工具），<code>telnet 192.168.1.1</code>到连接到光猫。<br>
+2、输入用户名：<code>root</code>，密码<code>admin</code>或者<code>adminHW</code>登录光猫，这里网上很多文章描述的密码是admin我这里提示密码错误，正确的应该是<code>adminHW</code>。<br>
+3、Telnet登录后，在WAP&gt;后面输入<code>backup cfg by tftp svrip 192.168.1.X remotefile hw_ctree.xml</code>命令（注意修改IP地址为自己的IP地址），输入完成后，应该就可以在桌面或者刚刚TFTP设置的目录位置看到一个<code>hw_ctree.xml</code>文件。</p>
+<h3 id="获取超级管理账号和密码">获取超级管理账号和密码</h3>
+<p>1、打开<code>华为光猫配置文件加解密工具</code>工具，输入文件选择刚刚修改的<code>hw_ctree.xml</code>输出文件修改为当前目录下文件名为<code>hw_ctree_bak.xml.gz</code>输出文件添加<code>.gz</code>后缀。<br>
+2、通过[7z]或者其他解压工具将<code>hw_ctree_bak.xml.gz</code>解压得到<code>hw_ctree_bak.xml</code>文件。<br>
+3、打开<code>hw_ctree_bak.xml</code>文件（通过IE浏览器或者其他文本编辑工具），搜索超级管理员账号<code>telecomadmin</code>，搜索的结果中的<code>Password</code>就是超级管理员密码。</p>
+<h3 id="恢复华为默认界面">恢复华为默认界面</h3>
+<p>警告:请注意备份你的LOID！请注意备份你的LOID！请注意备份你的LOID！<br>
+在Telnet到光猫后，在WAP&gt;后面输入<code>restorehwmode.sh</code>命令，等待成功提示后重启光猫。<br>
+！！！不可逆！！！！！！不可逆！！！！！！不可逆！！！谨慎炒作！！！</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[使用curl命令获取Bing壁纸JSON数据]]></title>
         <id>https://zywen.win/post/curl-bing-image/</id>
