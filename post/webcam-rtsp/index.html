@@ -35,7 +35,7 @@
 
 </head>
 <body>
-<div id="fh5co-offcanvas">
+    <div id="fh5co-offcanvas">
     <a href="#!" class="fh5co-close-offcanvas js-fh5co-close-offcanvas">
         <span><i class="icon-cross3"></i> <span>Close</span></span>
     </a>
@@ -151,135 +151,130 @@
 </header>
 
 
-<div class="container-fluid">
-    <div class="row fh5co-post-entry single-entry">
-        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0 animate-box">
+    <!--  <a href="#" class="fh5co-post-prev"><span>👈 Prev</span></a>-->
+    <!--  <a href="#" class="fh5co-post-next"><span>Next 👉</span></a>-->
 
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-2 col-sm-10 col-sm-offset-2 col-xs-12 col-xs-offset-0 text-center content-article">
+    <!-- 等gridea出自定义页面功能再优化一下 -->
+    
+        <div class="container-fluid">
+    <div class="row fh5co-post-entry single-entry">
+        <article class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-12 col-xs-offset-0">
+            <figure class="animate-box">
+                
+                    <img src="https://cdn.jsdelivr.net/gh/myseil/PicGoCDN//img/20210307220001.png" alt="部分摄像头串流连接方式" class="img-responsive">
+                
+            </figure>
+            <span class="fh5co-meta animate-box">
+                
+                    <div class="tag-container">
+                        
+                            <a href="https://zywen.win/tag/znnwSZSLa/" class="tag">摄像头RTSP, </a>
+                        
+                    </div>
+                
+            </span>
+            <h2 class="fh5co-article-title animate-box">部分摄像头串流连接方式</h2>
+            <ol class="breadcrumb fh5co-meta fh5co-date animate-box" style="margin-bottom:0; background-color:#f8f9fa">
+                <li>2021-01-04</li>
+                <li>393字</li>
+                <li>3 min read</li>
+            </ol>
+
+            <div class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-left content-article">
+                <div class="row">
+                    <div class="col-md-12 animate-box post-content">
+                        <p> <p>收集的部分摄像头串流的连接方式！</p>
+<!--more-->
+<h3 id="sdk连接">SDK连接</h3>
+<p>1、海康球机:user/password：admin/12345; Port:8000; IP：192.0.0.65（初始化）；（类型:IPCTypel=1）<br>
+2、尼德摄像机:user/password：admin/888888; Port:8088; IP：192.168.1.251(初始化)；（类型:IPCTypel=2）<br>
+3、艾普士达枪机:user/password：system/system; Port:6002; IP：192.168.1.4（初始化）；（类型:IPCTypel=3）<br>
+4、艾普士达球机:user/password：system/system; Port:6002; IP：192.168.2.214（初始化）；（类型:IPCTypel=3）<br>
+5、安联锐视摄像机：user/password：admin/admin; Port:9988; IP：192.168.1.168（初始化）；</p>
+<h3 id="rtsp连接">RTSP连接</h3>
+<p>1、艾普视达枪机：rtsp://system:system@192.168.1.14:554/bs0<br>
+2、艾普视达球机：rtsp://system:system@192.168.2.214:554/bs0<br>
+3、海康的球机:rtsp://admin:12345@192.168.1.64:554/h264/ch1/main/av_stream<br>
+4、佳信捷：rtsp://192.168.1.200:554/bs0<br>
+5、天宏旭鹰半球:rtsp://192.168.2.241:554/user=admin&amp;password=&amp;channel=1&amp;stream=0.sdp?<br>
+6、尼德摄像机主码流：rtsp://192.168.1.251:554/onvif/live/1<br>
+辅码流：rtsp://192.168.1.251:554/onvif/live/2</p>
+<p>7、英泰智星光机：rtsp://192.168.2.11:8557/h264；<br>
+8、三星枪机：rtsp://192.168.1.4/profile2/media.smp；(admin/a1b2c3d4e5)<br>
+9、海康枪机主码流：rtsp://admin:admin123@192.168.1.64:554/h264/ch1/main/av_stream<br>
+辅码流：rtsp://admin:admin123@192.168.1.64:554/h264/ch1/sub/av_stream<br>
+10、华为摄像机：rtsp://admin:HuaWei123 192.168.1.120:554/snl/live/1/1/Ux/sido=-eg7gt9EVjGle<br>
+11、大华摄像机主码流：rtsp://username:password@ip:port/cam/realmonitor?channel=1&amp;subtype=0<br>
+辅码流：rtsp://username:password@ip:port/cam/realmonitor?channel=1&amp;subtype=1<br>
+12、深佳科技：rtsp://admin:admin@192.168.2.150:554/h264/ch1/main/av_stream</p>
+ </p>
+                    </div>
+                </div>
 
                 <div class="row">
-
-                    
-                    <h2 class="text-center archives-title">
-                        <i class="fa fa-archive"></i> 文章归档
-                    </h2>
-
-                    
-                    <div class="row post-group">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xs-offset-0 text-center post-year tag-title">
-                            <h3>2021</h3>
-                        </div>
-
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xs-offset-0 text-left">
-                            <ul class="post-list">
-                            
-                                
-                                <li class="post-item">
-                                    <a href="https://zywen.win/post/hg8120c/" target="_blank">
-                                        <span class="post-title">HG8120C光猫获取管理员密码并恢复华为界面</span>
-                                        <span class="post-day">2021-03-07</span>
-                                    </a>
-                                </li>
-                                
-                            
-                                
-                                <li class="post-item">
-                                    <a href="https://zywen.win/post/curl-bing-image/" target="_blank">
-                                        <span class="post-title">使用curl命令获取Bing壁纸JSON数据</span>
-                                        <span class="post-day">2021-03-07</span>
-                                    </a>
-                                </li>
-                                
-                            
-                                
-                                <li class="post-item">
-                                    <a href="https://zywen.win/post/gi945-adg/" target="_blank">
-                                        <span class="post-title">利用闲置Gi945搭建AdGuard Home</span>
-                                        <span class="post-day">2021-03-06</span>
-                                    </a>
-                                </li>
-                                
-                            
-                                
-                                <li class="post-item">
-                                    <a href="https://zywen.win/post/webcam-rtsp/" target="_blank">
-                                        <span class="post-title">部分摄像头串流连接方式</span>
-                                        <span class="post-day">2021-01-04</span>
-                                    </a>
-                                </li>
-                                
-                            
-                                
-                            
-                                
-                            
-                                
-                            
-                            </ul>
-                        </div>
+                    <div class="col-md-12 animate-box">
+                        
+                            <div class="next-post">
+                                <div class="next">下一篇</div>
+                                <a href="https://zywen.win/post/Bimg-top/">
+                                    <h3 class="post-title">
+                                        Bing必应每日高清壁纸
+                                    </h3>
+                                </a>
+                            </div>
+                        
                     </div>
-                    
-                    <div class="row post-group">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xs-offset-0 text-center post-year tag-title">
-                            <h3>2020</h3>
-                        </div>
-
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-xs-offset-0 text-left">
-                            <ul class="post-list">
-                            
-                                
-                            
-                                
-                            
-                                
-                            
-                                
-                            
-                                
-                                <li class="post-item">
-                                    <a href="https://zywen.win/post/Bimg-top/" target="_blank">
-                                        <span class="post-title">Bing必应每日高清壁纸</span>
-                                        <span class="post-day">2020-11-11</span>
-                                    </a>
-                                </li>
-                                
-                            
-                                
-                                <li class="post-item">
-                                    <a href="https://zywen.win/post/MatrixClock/" target="_blank">
-                                        <span class="post-title">高精度LED点阵时钟（开源）</span>
-                                        <span class="post-day">2020-11-10</span>
-                                    </a>
-                                </li>
-                                
-                            
-                                
-                                <li class="post-item">
-                                    <a href="https://zywen.win/post/zi-hao-de-cai-yong-gridea-xie-jing-tai-bo-ke/" target="_blank">
-                                        <span class="post-title">自豪的采用Gridea写静态博客！</span>
-                                        <span class="post-day">2020-11-07</span>
-                                    </a>
-                                </li>
-                                
-                            
-                            </ul>
-                        </div>
-                    </div>
-                    
-
                 </div>
-            </div>
-        </div>
+
+                <div class="row">
+    <div class="col-md-12 animate-box">
+        
     </div>
 </div>
 
+            </div>
 
+        </article>
+    </div>
+</div>
+
+    
+
+    <!-- 返回顶部 -->
+    <div class="back-to-top">
+    
+        <a href="#!" id="tool-toc" class="hidden-xs hidden-sm">
+            <i class="fa fa-map"></i>
+        </a>
+        <br>
+    
+    <a href="#top" class="hidden-xs hidden-sm"><i class="fa fa-paper-plane"></i></a>
+</div>
+
+<div class="post-toc animated fadeInRight hidden-xs hidden-sm" style="display: none;">
+    <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#sdk%E8%BF%9E%E6%8E%A5">SDK连接</a></li>
+<li><a href="#rtsp%E8%BF%9E%E6%8E%A5">RTSP连接</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+
+
+    
 <footer id="fh5co-footer">
   <p>网站自豪的采用<a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a></p>
 </footer>
 
 
-<!-- jQuery -->
+    <!-- jQuery -->
 <script src="https://zywen.win/media/scripts/jquery.min.js"></script>
 <!-- img lazy load -->
 <script src="https://zywen.win/media/scripts/jquery.lazyload.min.js"></script>

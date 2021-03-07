@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zywen.win</id>
     <title>MySeil</title>
-    <updated>2021-03-07T13:58:51.630Z</updated>
+    <updated>2021-03-07T14:03:45.687Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zywen.win"/>
     <link rel="self" href="https://zywen.win/atom.xml"/>
@@ -186,6 +186,40 @@ CentOS下的下载命令是：<code>wget https://github.com/AdguardTeam/AdGuardH
 <p>刚刚修改完设备的DNS后在仪表盘就看到统计结果，发现拦截的百度（百毒）的是比较多。</p>
 <h3 id="总结">总结</h3>
 <p>总体来说效果还是挺满意的，把我闲置的Gi945设备利用起来，做一个广告过滤器让整个家里的局域网干干净净。这里值得说明的是，有时候会将我的小米电视的正常内容也过滤掉，这是因为小米电视的部分内容和广告好像是一起加载的，这样的我直接点击放行就搞定了。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[部分摄像头串流连接方式]]></title>
+        <id>https://zywen.win/post/webcam-rtsp/</id>
+        <link href="https://zywen.win/post/webcam-rtsp/">
+        </link>
+        <updated>2021-01-04T13:59:33.000Z</updated>
+        <summary type="html"><![CDATA[<p>收集的部分摄像头串流的连接方式！</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>收集的部分摄像头串流的连接方式！</p>
+<!--more-->
+<h3 id="sdk连接">SDK连接</h3>
+<p>1、海康球机:user/password：admin/12345; Port:8000; IP：192.0.0.65（初始化）；（类型:IPCTypel=1）<br>
+2、尼德摄像机:user/password：admin/888888; Port:8088; IP：192.168.1.251(初始化)；（类型:IPCTypel=2）<br>
+3、艾普士达枪机:user/password：system/system; Port:6002; IP：192.168.1.4（初始化）；（类型:IPCTypel=3）<br>
+4、艾普士达球机:user/password：system/system; Port:6002; IP：192.168.2.214（初始化）；（类型:IPCTypel=3）<br>
+5、安联锐视摄像机：user/password：admin/admin; Port:9988; IP：192.168.1.168（初始化）；</p>
+<h3 id="rtsp连接">RTSP连接</h3>
+<p>1、艾普视达枪机：rtsp://system:system@192.168.1.14:554/bs0<br>
+2、艾普视达球机：rtsp://system:system@192.168.2.214:554/bs0<br>
+3、海康的球机:rtsp://admin:12345@192.168.1.64:554/h264/ch1/main/av_stream<br>
+4、佳信捷：rtsp://192.168.1.200:554/bs0<br>
+5、天宏旭鹰半球:rtsp://192.168.2.241:554/user=admin&amp;password=&amp;channel=1&amp;stream=0.sdp?<br>
+6、尼德摄像机主码流：rtsp://192.168.1.251:554/onvif/live/1<br>
+辅码流：rtsp://192.168.1.251:554/onvif/live/2</p>
+<p>7、英泰智星光机：rtsp://192.168.2.11:8557/h264；<br>
+8、三星枪机：rtsp://192.168.1.4/profile2/media.smp；(admin/a1b2c3d4e5)<br>
+9、海康枪机主码流：rtsp://admin:admin123@192.168.1.64:554/h264/ch1/main/av_stream<br>
+辅码流：rtsp://admin:admin123@192.168.1.64:554/h264/ch1/sub/av_stream<br>
+10、华为摄像机：rtsp://admin:HuaWei123 192.168.1.120:554/snl/live/1/1/Ux/sido=-eg7gt9EVjGle<br>
+11、大华摄像机主码流：rtsp://username:password@ip:port/cam/realmonitor?channel=1&amp;subtype=0<br>
+辅码流：rtsp://username:password@ip:port/cam/realmonitor?channel=1&amp;subtype=1<br>
+12、深佳科技：rtsp://admin:admin@192.168.2.150:554/h264/ch1/main/av_stream</p>
 ]]></content>
     </entry>
     <entry>
