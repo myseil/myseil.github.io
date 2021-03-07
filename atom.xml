@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zywen.win</id>
     <title>MySeil</title>
-    <updated>2021-03-07T14:04:45.712Z</updated>
+    <updated>2021-03-07T14:08:55.966Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zywen.win"/>
     <link rel="self" href="https://zywen.win/atom.xml"/>
@@ -72,19 +72,17 @@
         <updated>2021-03-06T13:21:58.000Z</updated>
         <summary type="html"><![CDATA[<p>前言：所有内容均为个人经验，欢迎交流探讨。不涉及任何推广。</p>
 <h4 id="为什么这么玩">为什么这么玩？</h4>
-<figure data-type="image" tabindex="1"><img src="https://img-cdn.bimg.top/picgo/603a33663c9474729.jpg_fo742.jpg" alt="img" loading="lazy"></figure>
 <p>以前跟风捡垃圾入手了一个华为Gi945，后来因为N270CPU实在太拉跨就一直闲置到现在。最近在使用OpenWrt路由系统的时候接触到了一个去广告的项目支就是AdGuard Home，可以运行在软路由、硬路由等设备上面的去广告服务，基于DNS。相信各位折腾各种软路由和OpenWrt的玩家们并不陌生。当然，本人的路由设备是在太差，跑AdGuard Home估计会运行困难。所以想到将AdGuard Home放到Gi945下面去跑，让Gi945作为一个DNS服务器运行。</p>
 ]]></summary>
         <content type="html"><![CDATA[<p>前言：所有内容均为个人经验，欢迎交流探讨。不涉及任何推广。</p>
 <h4 id="为什么这么玩">为什么这么玩？</h4>
-<figure data-type="image" tabindex="1"><img src="https://img-cdn.bimg.top/picgo/603a33663c9474729.jpg_fo742.jpg" alt="img" loading="lazy"></figure>
 <p>以前跟风捡垃圾入手了一个华为Gi945，后来因为N270CPU实在太拉跨就一直闲置到现在。最近在使用OpenWrt路由系统的时候接触到了一个去广告的项目支就是AdGuard Home，可以运行在软路由、硬路由等设备上面的去广告服务，基于DNS。相信各位折腾各种软路由和OpenWrt的玩家们并不陌生。当然，本人的路由设备是在太差，跑AdGuard Home估计会运行困难。所以想到将AdGuard Home放到Gi945下面去跑，让Gi945作为一个DNS服务器运行。</p>
 <!-- more -->
-<figure data-type="image" tabindex="2"><img src="https://img-cdn.bimg.top/picgo/image-20210227152341471.png" alt="多年前购买的Gi945" loading="lazy"></figure>
+<figure data-type="image" tabindex="1"><img src="https://img-cdn.bimg.top/picgo/image-20210227152341471.png" alt="多年前购买的Gi945" loading="lazy"></figure>
 <p>我买的是未解锁的设备，关于要刷Bios这篇文章暂时不表。想你们也不会用这么垃圾的设备（笑~）</p>
 <h3 id="如何安装">如何安装？</h3>
 <h3 id="1gi945安装linux系统我这里安装的是centos-7-altarch-版本因为各大linux系统已经停止了对32位cpu的支持">1.Gi945安装linux系统，我这里安装的是CentOS 7 AltArch 版本，因为各大Linux系统已经停止了对32位CPU的支持。</h3>
-<figure data-type="image" tabindex="3"><img src="https://img-cdn.bimg.top/picgo/image-20210227161549946.png" alt="CentOS 7 AltArch" loading="lazy"></figure>
+<figure data-type="image" tabindex="2"><img src="https://img-cdn.bimg.top/picgo/image-20210227161549946.png" alt="CentOS 7 AltArch" loading="lazy"></figure>
 <ol start="2">
 <li>
 <p>到<a href="https://github.com/AdguardTeam/AdGuardHome/releases">Releases · AdguardTeam/AdGuardHome (github.com)</a>下载AdGuard Home的安装文件<br>
@@ -104,52 +102,52 @@ CentOS下的下载命令是：<code>wget https://github.com/AdguardTeam/AdGuardH
 <p>到这里就完成了安装的过程，下面就是使用的过程啦！（手动撒花~）</p>
 <h3 id="如何使用">如何使用？</h3>
 <p>首先，获取CentOS的IP地址，通过命令<code>ifconfig</code>或者 <code>ip add</code>。</p>
-<figure data-type="image" tabindex="4"><img src="https://img-cdn.bimg.top/picgo/image-20210227161636364.png" alt="ifconfig" loading="lazy"></figure>
+<figure data-type="image" tabindex="3"><img src="https://img-cdn.bimg.top/picgo/image-20210227161636364.png" alt="ifconfig" loading="lazy"></figure>
 <p>我这里获取到的IP地址是：192.168.5.220。</p>
 <p>通过访问 http://192.168.5.234:3000 进行<br>
 <img src="https://img-cdn.bimg.top/picgo/image-20210227162132615.png" alt="image-20210227162132615" loading="lazy"></p>
 <p>点击【开始配置】</p>
-<figure data-type="image" tabindex="5"><img src="https://img-cdn.bimg.top/picgo/image-20210227162219839.png" alt="image-20210227162219839" loading="lazy"></figure>
+<figure data-type="image" tabindex="4"><img src="https://img-cdn.bimg.top/picgo/image-20210227162219839.png" alt="image-20210227162219839" loading="lazy"></figure>
 <p>这里直接默认点击【下一步】</p>
-<figure data-type="image" tabindex="6"><img src="https://img-cdn.bimg.top/picgo/image-20210227162331006.png" alt="image-20210227162331006" loading="lazy"></figure>
+<figure data-type="image" tabindex="5"><img src="https://img-cdn.bimg.top/picgo/image-20210227162331006.png" alt="image-20210227162331006" loading="lazy"></figure>
 <p>设置用户名和密码然后【下一步】</p>
-<figure data-type="image" tabindex="7"><img src="https://img-cdn.bimg.top/picgo/image-20210227162405263.png" alt="image-20210227162405263" loading="lazy"></figure>
+<figure data-type="image" tabindex="6"><img src="https://img-cdn.bimg.top/picgo/image-20210227162405263.png" alt="image-20210227162405263" loading="lazy"></figure>
 <p>这里是告诉你应该如何设置你的其他设备，直接【下一步】</p>
-<figure data-type="image" tabindex="8"><img src="https://img-cdn.bimg.top/picgo/image-20210227162452248.png" alt="image-20210227162452248" loading="lazy"></figure>
+<figure data-type="image" tabindex="7"><img src="https://img-cdn.bimg.top/picgo/image-20210227162452248.png" alt="image-20210227162452248" loading="lazy"></figure>
 <h4 id="基本配置">基本配置</h4>
 <p>到这里直接【打开仪表盘】</p>
-<figure data-type="image" tabindex="9"><img src="https://img-cdn.bimg.top/picgo/image-20210227162558855.png" alt="image-20210227162558855" loading="lazy"></figure>
+<figure data-type="image" tabindex="8"><img src="https://img-cdn.bimg.top/picgo/image-20210227162558855.png" alt="image-20210227162558855" loading="lazy"></figure>
 <p>输入用户名和密码登录即可！</p>
-<figure data-type="image" tabindex="10"><img src="https://img-cdn.bimg.top/picgo/image-20210227162639330.png" alt="image-20210227162639330" loading="lazy"></figure>
+<figure data-type="image" tabindex="9"><img src="https://img-cdn.bimg.top/picgo/image-20210227162639330.png" alt="image-20210227162639330" loading="lazy"></figure>
 <p>登录后，右下方会提示一堆错误，暂时不用管，先来配置AdGuard Home。</p>
-<figure data-type="image" tabindex="11"><img src="https://img-cdn.bimg.top/picgo/image-20210227162731801.png" alt="image-20210227162731801" loading="lazy"></figure>
+<figure data-type="image" tabindex="10"><img src="https://img-cdn.bimg.top/picgo/image-20210227162731801.png" alt="image-20210227162731801" loading="lazy"></figure>
 <p>进入【设置】-【常规设置】</p>
-<figure data-type="image" tabindex="12"><img src="https://img-cdn.bimg.top/picgo/image-20210227162811449.png" alt="image-20210227162811449" loading="lazy"></figure>
+<figure data-type="image" tabindex="11"><img src="https://img-cdn.bimg.top/picgo/image-20210227162811449.png" alt="image-20210227162811449" loading="lazy"></figure>
 <p>把过滤器的更新时间设置为【3天】，这个可以自己考虑呀！我是这样设置的。</p>
-<figure data-type="image" tabindex="13"><img src="https://img-cdn.bimg.top/picgo/image-20210227162906734.png" alt="image-20210227162906734" loading="lazy"></figure>
+<figure data-type="image" tabindex="12"><img src="https://img-cdn.bimg.top/picgo/image-20210227162906734.png" alt="image-20210227162906734" loading="lazy"></figure>
 <p>然后日志这里看自己喜好设置即可，我设置保存时间都是90天。</p>
-<figure data-type="image" tabindex="14"><img src="https://img-cdn.bimg.top/picgo/image-20210227162949590.png" alt="image-20210227162949590" loading="lazy"></figure>
+<figure data-type="image" tabindex="13"><img src="https://img-cdn.bimg.top/picgo/image-20210227162949590.png" alt="image-20210227162949590" loading="lazy"></figure>
 <p>设置完成后点击一下【保存】，右下角会提示保存成功！</p>
 <h5 id="重点">重点！！！！！！</h5>
-<figure data-type="image" tabindex="15"><img src="https://img-cdn.bimg.top/picgo/image-20210227163039853.png" alt="image-20210227163039853" loading="lazy"></figure>
+<figure data-type="image" tabindex="14"><img src="https://img-cdn.bimg.top/picgo/image-20210227163039853.png" alt="image-20210227163039853" loading="lazy"></figure>
 <p>进入【设置】-【DNS设置】</p>
-<figure data-type="image" tabindex="16"><img src="https://img-cdn.bimg.top/picgo/image-20210227163223275.png" alt="image-20210227163223275" loading="lazy"></figure>
+<figure data-type="image" tabindex="15"><img src="https://img-cdn.bimg.top/picgo/image-20210227163223275.png" alt="image-20210227163223275" loading="lazy"></figure>
 <p><code>https://dns.alidns.com/dns-query https://doh.pub/dns-query 114.114.114.114 223.5.5.5 119.29.29.29 8.8.8.8</code></p>
 <p>将以上内容填进去，然后设置为（负载均衡）</p>
-<figure data-type="image" tabindex="17"><img src="https://img-cdn.bimg.top/picgo/image-20210227163332378.png" alt="image-20210227163332378" loading="lazy"></figure>
+<figure data-type="image" tabindex="16"><img src="https://img-cdn.bimg.top/picgo/image-20210227163332378.png" alt="image-20210227163332378" loading="lazy"></figure>
 <p>然后点击【应用】</p>
-<figure data-type="image" tabindex="18"><img src="https://img-cdn.bimg.top/picgo/image-20210227163357499.png" alt="image-20210227163357499" loading="lazy"></figure>
+<figure data-type="image" tabindex="17"><img src="https://img-cdn.bimg.top/picgo/image-20210227163357499.png" alt="image-20210227163357499" loading="lazy"></figure>
 <p>右下角会提示上游DNS已更新，这样就完成了基本配置。</p>
 <p>然后测试DNS是否配置成功点击【测试上游DNS】即可。</p>
-<figure data-type="image" tabindex="19"><img src="https://img-cdn.bimg.top/picgo/image-20210227163517280.png" alt="image-20210227163517280" loading="lazy"></figure>
+<figure data-type="image" tabindex="18"><img src="https://img-cdn.bimg.top/picgo/image-20210227163517280.png" alt="image-20210227163517280" loading="lazy"></figure>
 <p>出现运行正常就没问题啦！</p>
-<figure data-type="image" tabindex="20"><img src="https://img-cdn.bimg.top/picgo/image-20210227163556293.png" alt="image-20210227163556293" loading="lazy"></figure>
+<figure data-type="image" tabindex="19"><img src="https://img-cdn.bimg.top/picgo/image-20210227163556293.png" alt="image-20210227163556293" loading="lazy"></figure>
 <p>其他的【加密设置】、【客户端设置】我默认就好了，可以根据自己的需求进行配置。</p>
 <p>这里讲一下DHCP设置，这里就是Adguard Home内置的DHCP服务，可以接管路由器的DHCP，如果路由器开启了DHCP这里就不要开启了，避免冲突导致局域网内设备无法联网。</p>
 <h4 id="广告过滤配置">广告过滤配置</h4>
-<figure data-type="image" tabindex="21"><img src="https://img-cdn.bimg.top/picgo/image-20210227163940815.png" alt="image-20210227163940815" loading="lazy"></figure>
+<figure data-type="image" tabindex="20"><img src="https://img-cdn.bimg.top/picgo/image-20210227163940815.png" alt="image-20210227163940815" loading="lazy"></figure>
 <p>到【过滤器】-【DNS封锁清单】中进行配置</p>
-<figure data-type="image" tabindex="22"><img src="https://img-cdn.bimg.top/picgo/image-20210227164041646.png" alt="image-20210227164041646" loading="lazy"></figure>
+<figure data-type="image" tabindex="21"><img src="https://img-cdn.bimg.top/picgo/image-20210227164041646.png" alt="image-20210227164041646" loading="lazy"></figure>
 <p>点击【添加阻止列表】-【添加一个自定义列表】</p>
 <p>这里推荐几个：</p>
 <ul>
@@ -158,31 +156,31 @@ CentOS下的下载命令是：<code>wget https://github.com/AdguardTeam/AdGuardH
 <li>EasyList https://easylist-downloads.adblockplus.org/easylist.txt</li>
 <li>EasyList China https://easylist-downloads.adblockplus.org/easylistchina.txt</li>
 </ul>
-<figure data-type="image" tabindex="23"><img src="https://img-cdn.bimg.top/picgo/image-20210227164449101.png" alt="image-20210227164449101" loading="lazy"></figure>
+<figure data-type="image" tabindex="22"><img src="https://img-cdn.bimg.top/picgo/image-20210227164449101.png" alt="image-20210227164449101" loading="lazy"></figure>
 <p>其他的过滤器可以自行Google</p>
 <p>到这里配置就已经结束了！还有补充的可以留言交流呀！</p>
 <h3 id="设备配置">设备配置</h3>
 <p>以Windows 10为例：</p>
-<figure data-type="image" tabindex="24"><img src="https://img-cdn.bimg.top/picgo/image-20210227165430868.png" alt="image-20210227165430868" loading="lazy"></figure>
+<figure data-type="image" tabindex="23"><img src="https://img-cdn.bimg.top/picgo/image-20210227165430868.png" alt="image-20210227165430868" loading="lazy"></figure>
 <p>打开网络和Internet设置</p>
-<figure data-type="image" tabindex="25"><img src="https://img-cdn.bimg.top/picgo/image-20210227165530586.png" alt="image-20210227165530586" loading="lazy"></figure>
+<figure data-type="image" tabindex="24"><img src="https://img-cdn.bimg.top/picgo/image-20210227165530586.png" alt="image-20210227165530586" loading="lazy"></figure>
 <p>点击【以太网】</p>
-<figure data-type="image" tabindex="26"><img src="https://img-cdn.bimg.top/picgo/image-20210227165554652.png" alt="image-20210227165554652" loading="lazy"></figure>
+<figure data-type="image" tabindex="25"><img src="https://img-cdn.bimg.top/picgo/image-20210227165554652.png" alt="image-20210227165554652" loading="lazy"></figure>
 <p>【更改适配器选项】</p>
-<figure data-type="image" tabindex="27"><img src="https://img-cdn.bimg.top/picgo/image-20210227165656351.png" alt="image-20210227165656351" loading="lazy"></figure>
+<figure data-type="image" tabindex="26"><img src="https://img-cdn.bimg.top/picgo/image-20210227165656351.png" alt="image-20210227165656351" loading="lazy"></figure>
 <p>将（以太网）右击【属性】</p>
-<figure data-type="image" tabindex="28"><img src="https://img-cdn.bimg.top/picgo/image-20210227165853809.png" alt="image-20210227165853809" loading="lazy"></figure>
+<figure data-type="image" tabindex="27"><img src="https://img-cdn.bimg.top/picgo/image-20210227165853809.png" alt="image-20210227165853809" loading="lazy"></figure>
 <p>选择【Internet协议版本4 (TCP/IPv4)】 然后点击【属性】</p>
-<figure data-type="image" tabindex="29"><img src="https://img-cdn.bimg.top/picgo/image-20210227170008218.png" alt="image-20210227170008218" loading="lazy"></figure>
+<figure data-type="image" tabindex="28"><img src="https://img-cdn.bimg.top/picgo/image-20210227170008218.png" alt="image-20210227170008218" loading="lazy"></figure>
 <p>选择【使用下面的DNS服务器地址】，修改（首选DNS服务器）为：<code>192.168.5.220</code>这里根据你自己的IP修改。</p>
 <p>修改完成后，就设备就配置完成了！</p>
 <h3 id="查看日志">查看日志</h3>
-<figure data-type="image" tabindex="30"><img src="https://img-cdn.bimg.top/picgo/image-20210227170200723.png" alt="image-20210227170200723" loading="lazy"></figure>
+<figure data-type="image" tabindex="29"><img src="https://img-cdn.bimg.top/picgo/image-20210227170200723.png" alt="image-20210227170200723" loading="lazy"></figure>
 <p>点击查询日志就能看到AdGuard Home过滤器的日志，这里显示很多内容，响应为已拦截的就是我们刚刚配置的广告过滤配置规则生效的结果。</p>
 <p>PS.如果这里拦截了某一个并不想拦截的请求，在后面点击【放行】即可。</p>
-<figure data-type="image" tabindex="31"><img src="https://img-cdn.bimg.top/picgo/image-20210227170453082.png" alt="image-20210227170453082" loading="lazy"></figure>
+<figure data-type="image" tabindex="30"><img src="https://img-cdn.bimg.top/picgo/image-20210227170453082.png" alt="image-20210227170453082" loading="lazy"></figure>
 <h3 id="效果">效果</h3>
-<figure data-type="image" tabindex="32"><img src="https://img-cdn.bimg.top/picgo/image-20210227170547522.png" alt="image-20210227170547522" loading="lazy"></figure>
+<figure data-type="image" tabindex="31"><img src="https://img-cdn.bimg.top/picgo/image-20210227170547522.png" alt="image-20210227170547522" loading="lazy"></figure>
 <p>刚刚修改完设备的DNS后在仪表盘就看到统计结果，发现拦截的百度（百毒）的是比较多。</p>
 <h3 id="总结">总结</h3>
 <p>总体来说效果还是挺满意的，把我闲置的Gi945设备利用起来，做一个广告过滤器让整个家里的局域网干干净净。这里值得说明的是，有时候会将我的小米电视的正常内容也过滤掉，这是因为小米电视的部分内容和广告好像是一起加载的，这样的我直接点击放行就搞定了。</p>
