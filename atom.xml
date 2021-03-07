@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zywen.win</id>
     <title>MySeil</title>
-    <updated>2021-03-06T14:22:10.864Z</updated>
+    <updated>2021-03-07T13:17:00.960Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zywen.win"/>
     <link rel="self" href="https://zywen.win/atom.xml"/>
@@ -10,6 +10,24 @@
     <logo>https://zywen.win/images/avatar.png</logo>
     <icon>https://zywen.win/favicon.ico</icon>
     <rights>All rights reserved 2021, MySeil</rights>
+    <entry>
+        <title type="html"><![CDATA[使用curl命令获取Bing壁纸JSON数据]]></title>
+        <id>https://zywen.win/post/curl-bing-image/</id>
+        <link href="https://zywen.win/post/curl-bing-image/">
+        </link>
+        <updated>2021-03-07T13:05:36.000Z</updated>
+        <summary type="html"><![CDATA[<h4 id="关于curl命令">关于CURL命令</h4>
+<p>cURL是一个利用URL语法在命令行下工作的文件传输工具，1997年首次发行。它支持文件上传和下载，所以是综合传输工具，但按传统，习惯称cURL为下载工具。cURL支持的通信协议有FTP、FTPS、HTTP、HTTPS、TFTP、SFTP)、Gopher、SCP、Telnet、DICT、FILE、LDAP、LDAPS、IMAP、POP3、SMTP和RTSP。curl还支持SSL认证、HTTP POST、HTTP PUT、FTP上传, HTTP form based upload、proxies、HTTP/2、cookies、用户名+密码认证(Basic, Plain, Digest, CRAM-MD5, NTLM, Negotiate and Kerberos)、file transfer resume、proxy tunneling。---来自百度百科</p>
+]]></summary>
+        <content type="html"><![CDATA[<h4 id="关于curl命令">关于CURL命令</h4>
+<p>cURL是一个利用URL语法在命令行下工作的文件传输工具，1997年首次发行。它支持文件上传和下载，所以是综合传输工具，但按传统，习惯称cURL为下载工具。cURL支持的通信协议有FTP、FTPS、HTTP、HTTPS、TFTP、SFTP)、Gopher、SCP、Telnet、DICT、FILE、LDAP、LDAPS、IMAP、POP3、SMTP和RTSP。curl还支持SSL认证、HTTP POST、HTTP PUT、FTP上传, HTTP form based upload、proxies、HTTP/2、cookies、用户名+密码认证(Basic, Plain, Digest, CRAM-MD5, NTLM, Negotiate and Kerberos)、file transfer resume、proxy tunneling。---来自百度百科</p>
+<!-- more -->
+<h4 id="使用命令">使用命令</h4>
+<p><code>curl -A &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36&quot; &quot;https://cn.bing.com/HPImageArchive.aspx?format=js&amp;idx=0&amp;n=10&amp;nc=1612409408851&amp;pid=hp&amp;FORM=BEHPTB&amp;uhd=1&amp;uhdwidth=3840&amp;uhdheight=2160&quot;</code></p>
+<h4 id="效果如下">效果如下</h4>
+<figure data-type="image" tabindex="1"><img src="https://cdn.jsdelivr.net/gh/myseil/PicGoCDN//img/20210307211356.png" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[利用闲置Gi945搭建AdGuard Home]]></title>
         <id>https://zywen.win/post/gi945-adg/</id>
