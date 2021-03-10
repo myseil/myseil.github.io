@@ -8,9 +8,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://zywen.win/favicon.ico?v=1615291185910">
+<link rel="shortcut icon" href="https://zywen.win/favicon.ico?v=1615385551518">
 <link rel="stylesheet" href="https://zywen.win/styles/main.css">
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
 
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -29,7 +35,7 @@ cURL是一个利用URL语法在命令行下工作的文件传输工具，1997年
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://zywen.win">
-        <img src="https://zywen.win/images/avatar.png?v=1615291185910" class="site-logo">
+        <img src="https://zywen.win/images/avatar.png?v=1615385551518" class="site-logo">
         <h1 class="site-title">MySeil</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -130,6 +136,12 @@ cURL是一个利用URL语法在命令行下工作的文件传输工具，1997年
             
 
             
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
 
           </div>
 
@@ -152,6 +164,29 @@ var app = new Vue({
 </script>
 
 
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '2e871dd8af89df350a0e',
+        clientSecret: '6511dcde18a9ef6504f313e48ce4110d1e579c19 ',
+        repo: 'myseil.github.io',
+        owner: 'myseil',
+        admin: ['myseil'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 
