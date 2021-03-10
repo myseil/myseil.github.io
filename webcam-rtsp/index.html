@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>部分摄像头串流连接方式 | MySeil</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://zywen.win/favicon.ico?v=1615386746278">
+<link rel="stylesheet" href="https://zywen.win/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="收集的部分摄像头串流的连接方式！
+
+SDK连接
+1、海康球机:user/password：admin/12345; Port:8000; IP：192.0.0.65（初始化）；（类型:IPCTypel=1）
+2、尼德摄像机:user/pas..." />
+    <meta name="keywords" content="摄像头RTSP" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://zywen.win">
+        <img src="https://zywen.win/images/avatar.png?v=1615386746278" class="site-logo">
+        <h1 class="site-title">MySeil</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      何以解忧？唯有暴富！
+    </div>
+    <div class="site-footer">
+      网站自豪的采用<a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://zywen.win/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">部分摄像头串流连接方式</h2>
+            <div class="post-date">2021-01-04</div>
+            
+              <div class="feature-container" style="background-image: url('https://cdn.jsdelivr.net/gh/myseil/PicGoCDN//img/20210307220001.png')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <p>收集的部分摄像头串流的连接方式！</p>
+<!--more-->
+<h3 id="sdk连接">SDK连接</h3>
+<p>1、海康球机:user/password：admin/12345; Port:8000; IP：192.0.0.65（初始化）；（类型:IPCTypel=1）<br>
+2、尼德摄像机:user/password：admin/888888; Port:8088; IP：192.168.1.251(初始化)；（类型:IPCTypel=2）<br>
+3、艾普士达枪机:user/password：system/system; Port:6002; IP：192.168.1.4（初始化）；（类型:IPCTypel=3）<br>
+4、艾普士达球机:user/password：system/system; Port:6002; IP：192.168.2.214（初始化）；（类型:IPCTypel=3）<br>
+5、安联锐视摄像机：user/password：admin/admin; Port:9988; IP：192.168.1.168（初始化）；</p>
+<h3 id="rtsp连接">RTSP连接</h3>
+<p>1、艾普视达枪机：rtsp://system:system@192.168.1.14:554/bs0<br>
+2、艾普视达球机：rtsp://system:system@192.168.2.214:554/bs0<br>
+3、海康的球机:rtsp://admin:12345@192.168.1.64:554/h264/ch1/main/av_stream<br>
+4、佳信捷：rtsp://192.168.1.200:554/bs0<br>
+5、天宏旭鹰半球:rtsp://192.168.2.241:554/user=admin&amp;password=&amp;channel=1&amp;stream=0.sdp?<br>
+6、尼德摄像机主码流：rtsp://192.168.1.251:554/onvif/live/1<br>
+辅码流：rtsp://192.168.1.251:554/onvif/live/2</p>
+<p>7、英泰智星光机：rtsp://192.168.2.11:8557/h264；<br>
+8、三星枪机：rtsp://192.168.1.4/profile2/media.smp；(admin/a1b2c3d4e5)<br>
+9、海康枪机主码流：rtsp://admin:admin123@192.168.1.64:554/h264/ch1/main/av_stream<br>
+辅码流：rtsp://admin:admin123@192.168.1.64:554/h264/ch1/sub/av_stream<br>
+10、华为摄像机：rtsp://admin:HuaWei123 192.168.1.120:554/snl/live/1/1/Ux/sido=-eg7gt9EVjGle<br>
+11、大华摄像机主码流：rtsp://username:password@ip:port/cam/realmonitor?channel=1&amp;subtype=0<br>
+辅码流：rtsp://username:password@ip:port/cam/realmonitor?channel=1&amp;subtype=1<br>
+12、深佳科技：rtsp://admin:admin@192.168.2.150:554/h264/ch1/main/av_stream</p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://zywen.win/znnwSZSLa/" class="tag">
+                    摄像头RTSP
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://zywen.win/Bimg-top/">
+                  <h3 class="post-title">
+                    Bing必应每日高清壁纸
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '2e871dd8af89df350a0e',
+        clientSecret: ' d5a5bd16a9f2cc3b4adb5c708691780ba4ea37f3',
+        repo: 'myseil.github.io',
+        owner: 'myseil',
+        admin: ['myseil'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>标签列表 | MySeil</title>
+<title>自豪的采用Gridea写静态博客！ | MySeil</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -12,13 +12,23 @@
 <link rel="stylesheet" href="https://zywen.win/styles/main.css">
 
 
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
 
-    <meta name="description" content="何以解忧？唯有暴富！">
+    <meta name="description" content="非常自豪的采用Gridea写博客，托管于Coding！
+感谢！
+By：2020年11月7日 23:42:19
+" />
+    <meta name="keywords" content="Gridea" />
   </head>
   <body>
     <div id="app" class="main">
@@ -82,36 +92,40 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          <h2 class="tag-list-title">标签列表</h2>
-          <div class="tags-container">
+          <div class="post-detail">
+            <h2 class="post-title">自豪的采用Gridea写静态博客！</h2>
+            <div class="post-date">2020-11-07</div>
             
-              <a class="tag" href="https://zywen.win/eZBkSgrxm/">hg8120c</a>
+              <div class="feature-container" style="background-image: url('https://zywen.win/post-images/zi-hao-de-cai-yong-gridea-xie-jing-tai-bo-ke.jpg')">
+              </div>
             
-              <a class="tag" href="https://zywen.win/fiZNWv1_1/">Linux</a>
+            <div class="post-content" v-pre>
+              <p>非常自豪的采用Gridea写博客，托管于Coding！<br>
+感谢！<br>
+By：2020年11月7日 23:42:19</p>
+
+            </div>
             
-              <a class="tag" href="https://zywen.win/aJwsffQzpP/">curl</a>
+              <div class="tag-container">
+                
+                  <a href="https://zywen.win/W3udQ2abo/" class="tag">
+                    Gridea
+                  </a>
+                
+              </div>
             
-              <a class="tag" href="https://zywen.win/BvlK3r4iu/">Bing壁纸</a>
             
-              <a class="tag" href="https://zywen.win/9xtZ9j732/">AdGuardHome</a>
+
             
-              <a class="tag" href="https://zywen.win/xm_Qq1G6Y2/">去广告</a>
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
             
-              <a class="tag" href="https://zywen.win/EG5RonstgI/">Gi945</a>
-            
-              <a class="tag" href="https://zywen.win/znnwSZSLa/">摄像头RTSP</a>
-            
-              <a class="tag" href="https://zywen.win/3vGkHakLGz/">必应壁纸</a>
-            
-              <a class="tag" href="https://zywen.win/JV0dbl2yg/">ESP8266</a>
-            
-              <a class="tag" href="https://zywen.win/AlAP6TenCw/">LED点阵</a>
-            
-              <a class="tag" href="https://zywen.win/vtVKTwQ-BR/">时钟</a>
-            
-              <a class="tag" href="https://zywen.win/W3udQ2abo/">Gridea</a>
-            
+
           </div>
+
         </div>
       </div>
     </div>
@@ -131,6 +145,29 @@ var app = new Vue({
 </script>
 
 
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '2e871dd8af89df350a0e',
+        clientSecret: ' d5a5bd16a9f2cc3b4adb5c708691780ba4ea37f3',
+        repo: 'myseil.github.io',
+        owner: 'myseil',
+        admin: ['myseil'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 

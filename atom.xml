@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zywen.win</id>
     <title>MySeil</title>
-    <updated>2021-03-10T14:20:51.951Z</updated>
+    <updated>2021-03-10T14:32:28.869Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zywen.win"/>
     <link rel="self" href="https://zywen.win/atom.xml"/>
@@ -12,8 +12,8 @@
     <rights>All rights reserved 2021, MySeil</rights>
     <entry>
         <title type="html"><![CDATA[HG8120C光猫获取管理员密码并恢复华为界面]]></title>
-        <id>https://zywen.win/post/hg8120c/</id>
-        <link href="https://zywen.win/post/hg8120c/">
+        <id>https://zywen.win/hg8120c/</id>
+        <link href="https://zywen.win/hg8120c/">
         </link>
         <updated>2021-03-07T13:55:46.000Z</updated>
         <summary type="html"><![CDATA[<h3 id="警告">警告！！！</h3>
@@ -48,8 +48,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[使用curl命令获取Bing壁纸JSON数据]]></title>
-        <id>https://zywen.win/post/curl-bing-image/</id>
-        <link href="https://zywen.win/post/curl-bing-image/">
+        <id>https://zywen.win/curl-bing-image/</id>
+        <link href="https://zywen.win/curl-bing-image/">
         </link>
         <updated>2021-03-07T13:05:36.000Z</updated>
         <summary type="html"><![CDATA[<h4 id="关于curl命令">关于CURL命令</h4>
@@ -66,8 +66,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[利用闲置Gi945搭建AdGuard Home]]></title>
-        <id>https://zywen.win/post/gi945-adg/</id>
-        <link href="https://zywen.win/post/gi945-adg/">
+        <id>https://zywen.win/gi945-adg/</id>
+        <link href="https://zywen.win/gi945-adg/">
         </link>
         <updated>2021-03-06T13:21:58.000Z</updated>
         <summary type="html"><![CDATA[<p>前言：所有内容均为个人经验，欢迎交流探讨。不涉及任何推广。</p>
@@ -188,8 +188,8 @@ CentOS下的下载命令是：<code>wget https://github.com/AdguardTeam/AdGuardH
     </entry>
     <entry>
         <title type="html"><![CDATA[部分摄像头串流连接方式]]></title>
-        <id>https://zywen.win/post/webcam-rtsp/</id>
-        <link href="https://zywen.win/post/webcam-rtsp/">
+        <id>https://zywen.win/webcam-rtsp/</id>
+        <link href="https://zywen.win/webcam-rtsp/">
         </link>
         <updated>2021-01-04T13:59:33.000Z</updated>
         <summary type="html"><![CDATA[<p>收集的部分摄像头串流的连接方式！</p>
@@ -222,8 +222,8 @@ CentOS下的下载命令是：<code>wget https://github.com/AdguardTeam/AdGuardH
     </entry>
     <entry>
         <title type="html"><![CDATA[Bing必应每日高清壁纸]]></title>
-        <id>https://zywen.win/post/Bimg-top/</id>
-        <link href="https://zywen.win/post/Bimg-top/">
+        <id>https://zywen.win/Bimg-top/</id>
+        <link href="https://zywen.win/Bimg-top/">
         </link>
         <updated>2020-11-11T12:05:20.000Z</updated>
         <content type="html"><![CDATA[<p><code>首先今天是2020年11月11日 ，双十一哦！祝大家光棍节快乐，剁手不哭！</code></p>
@@ -259,8 +259,8 @@ CentOS下的下载命令是：<code>wget https://github.com/AdguardTeam/AdGuardH
     </entry>
     <entry>
         <title type="html"><![CDATA[高精度LED点阵时钟（开源）]]></title>
-        <id>https://zywen.win/post/MatrixClock/</id>
-        <link href="https://zywen.win/post/MatrixClock/">
+        <id>https://zywen.win/MatrixClock/</id>
+        <link href="https://zywen.win/MatrixClock/">
         </link>
         <updated>2020-11-10T14:59:23.000Z</updated>
         <content type="html"><![CDATA[<h2 id="视频演示">视频演示</h2>
@@ -297,8 +297,8 @@ CentOS下的下载命令是：<code>wget https://github.com/AdguardTeam/AdGuardH
     </entry>
     <entry>
         <title type="html"><![CDATA[自豪的采用Gridea写静态博客！]]></title>
-        <id>https://zywen.win/post/zi-hao-de-cai-yong-gridea-xie-jing-tai-bo-ke/</id>
-        <link href="https://zywen.win/post/zi-hao-de-cai-yong-gridea-xie-jing-tai-bo-ke/">
+        <id>https://zywen.win/zi-hao-de-cai-yong-gridea-xie-jing-tai-bo-ke/</id>
+        <link href="https://zywen.win/zi-hao-de-cai-yong-gridea-xie-jing-tai-bo-ke/">
         </link>
         <updated>2020-11-07T15:40:28.000Z</updated>
         <content type="html"><![CDATA[<p>非常自豪的采用Gridea写博客，托管于Coding！<br>

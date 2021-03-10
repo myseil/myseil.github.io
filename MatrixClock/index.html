@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>高精度LED点阵时钟（开源） | MySeil</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://zywen.win/favicon.ico?v=1615386746278">
+<link rel="stylesheet" href="https://zywen.win/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="视频演示
+
+哔哩哔哩 https://www.bilibili.com/video/BV11a4y1s7Tq/
+
+源码来源
+
+https://github.com/schreibfaul1/ESP8266-LED-Matrix-Clock
+..." />
+    <meta name="keywords" content="ESP8266,LED点阵,时钟" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://zywen.win">
+        <img src="https://zywen.win/images/avatar.png?v=1615386746278" class="site-logo">
+        <h1 class="site-title">MySeil</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      何以解忧？唯有暴富！
+    </div>
+    <div class="site-footer">
+      网站自豪的采用<a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://zywen.win/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">高精度LED点阵时钟（开源）</h2>
+            <div class="post-date">2020-11-10</div>
+            
+              <div class="feature-container" style="background-image: url('https://zywen.win/post-images/MatrixClock.jpeg')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <h2 id="视频演示">视频演示</h2>
+<ul>
+<li>哔哩哔哩 <a href="https://www.bilibili.com/video/BV11a4y1s7Tq/">https://www.bilibili.com/video/BV11a4y1s7Tq/</a></li>
+</ul>
+<h2 id="源码来源">源码来源</h2>
+<ul>
+<li><a href="https://github.com/schreibfaul1/ESP8266-LED-Matrix-Clock">https://github.com/schreibfaul1/ESP8266-LED-Matrix-Clock</a></li>
+</ul>
+<h2 id="修改了什么">修改了什么</h2>
+<ul>
+<li>将原作者使用的共阴极LED模块改为了共阳极LED模块（手头现有的）</li>
+<li>将数字字体稍作修改，改的更丑了（手动滑稽）</li>
+<li>添加了中文星期显示，可自行修改星期七或者星期天（自制？）</li>
+<li>将显示模式改为了更符合中国人的阅读习惯（不知道你习不习惯，反正我是这样比较习惯）</li>
+<li>将固定时间滚动改为了随机时间滚动</li>
+</ul>
+<h2 id="鸣谢">鸣谢</h2>
+<ul>
+<li><a href="https://lceda.cn/">立创EDA</a> - 超级简单易用易学的国产EDA</li>
+<li><a href="https://www.jlc.com/">嘉立创</a> - 5元10x10cm打样，顺丰包邮。真香警告！</li>
+<li><a href="https://www.szlcsc.com/">立创商城</a> - 元件齐全，有活动可以白嫖！</li>
+</ul>
+<h2 id="硬件开源地址">硬件开源地址</h2>
+<ul>
+<li><a href="https://oshwhub.com/myseil/gao-jing-duled-dian-zhen-shi-zhong">OSHWHub硬件开源平台</a></li>
+</ul>
+<h2 id="开源代码">开源代码</h2>
+<ul>
+<li>🎁GitHub<a href="https://github.com/myseil/MatrixClock">https://github.com/myseil/MatrixClock</a>,如果觉得不错，请Star哟！</li>
+</ul>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://zywen.win/JV0dbl2yg/" class="tag">
+                    ESP8266
+                  </a>
+                
+                  <a href="https://zywen.win/AlAP6TenCw/" class="tag">
+                    LED点阵
+                  </a>
+                
+                  <a href="https://zywen.win/vtVKTwQ-BR/" class="tag">
+                    时钟
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://zywen.win/zi-hao-de-cai-yong-gridea-xie-jing-tai-bo-ke/">
+                  <h3 class="post-title">
+                    自豪的采用Gridea写静态博客！
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '2e871dd8af89df350a0e',
+        clientSecret: ' d5a5bd16a9f2cc3b4adb5c708691780ba4ea37f3',
+        repo: 'myseil.github.io',
+        owner: 'myseil',
+        admin: ['myseil'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>

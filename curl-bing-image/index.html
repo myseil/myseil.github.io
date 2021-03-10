@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>使用curl命令获取Bing壁纸JSON数据 | MySeil</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://zywen.win/favicon.ico?v=1615386746278">
+<link rel="stylesheet" href="https://zywen.win/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="关于CURL命令
+cURL是一个利用URL语法在命令行下工作的文件传输工具，1997年首次发行。它支持文件上传和下载，所以是综合传输工具，但按传统，习惯称cURL为下载工具。cURL支持的通信协议有FTP、FTPS、HTTP、HTTPS、T..." />
+    <meta name="keywords" content="Linux,curl,Bing壁纸" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://zywen.win">
+        <img src="https://zywen.win/images/avatar.png?v=1615386746278" class="site-logo">
+        <h1 class="site-title">MySeil</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      何以解忧？唯有暴富！
+    </div>
+    <div class="site-footer">
+      网站自豪的采用<a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://zywen.win/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">使用curl命令获取Bing壁纸JSON数据</h2>
+            <div class="post-date">2021-03-07</div>
+            
+              <div class="feature-container" style="background-image: url('https://cdn.jsdelivr.net/gh/myseil/PicGoCDN//img/20210307211356.png')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <h4 id="关于curl命令">关于CURL命令</h4>
+<p>cURL是一个利用URL语法在命令行下工作的文件传输工具，1997年首次发行。它支持文件上传和下载，所以是综合传输工具，但按传统，习惯称cURL为下载工具。cURL支持的通信协议有FTP、FTPS、HTTP、HTTPS、TFTP、SFTP)、Gopher、SCP、Telnet、DICT、FILE、LDAP、LDAPS、IMAP、POP3、SMTP和RTSP。curl还支持SSL认证、HTTP POST、HTTP PUT、FTP上传, HTTP form based upload、proxies、HTTP/2、cookies、用户名+密码认证(Basic, Plain, Digest, CRAM-MD5, NTLM, Negotiate and Kerberos)、file transfer resume、proxy tunneling。---来自百度百科</p>
+<!-- more -->
+<h4 id="使用命令">使用命令</h4>
+<p><code>curl -A &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36&quot; &quot;https://cn.bing.com/HPImageArchive.aspx?format=js&amp;idx=0&amp;n=10&amp;nc=1612409408851&amp;pid=hp&amp;FORM=BEHPTB&amp;uhd=1&amp;uhdwidth=3840&amp;uhdheight=2160&quot;</code></p>
+<h4 id="效果如下">效果如下</h4>
+<figure data-type="image" tabindex="1"><img src="https://cdn.jsdelivr.net/gh/myseil/PicGoCDN//img/20210307211356.png" alt="" loading="lazy"></figure>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://zywen.win/fiZNWv1_1/" class="tag">
+                    Linux
+                  </a>
+                
+                  <a href="https://zywen.win/aJwsffQzpP/" class="tag">
+                    curl
+                  </a>
+                
+                  <a href="https://zywen.win/BvlK3r4iu/" class="tag">
+                    Bing壁纸
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://zywen.win/gi945-adg/">
+                  <h3 class="post-title">
+                    利用闲置Gi945搭建AdGuard Home
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '2e871dd8af89df350a0e',
+        clientSecret: ' d5a5bd16a9f2cc3b4adb5c708691780ba4ea37f3',
+        repo: 'myseil.github.io',
+        owner: 'myseil',
+        admin: ['myseil'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>
